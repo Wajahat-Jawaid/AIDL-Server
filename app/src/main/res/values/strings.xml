@@ -1,14 +1,13 @@
 <resources>
-    <string name="app_name">Golootlo Android Test</string>
-    <string name="comment">Comment</string>
-    <string name="comments_count">%d Comments</string>
-    <string name="delete">Delete</string>
-    <string name="download">Download</string>
-    <string name="like">Like</string>
-    <string name="likes_count">%d Likes</string>
-    <string name="photo">photo</string>
+    <string name="app_name">SocialMobileTest - Server</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+
+    <string name="credentials_formatted">[%s, %s]</string>
 
     <!-- Messages -->
-    <string name="image_download_in_progress">Image downloading is in progress</string>
-    <string name="grant_permission_image">Grant permission to save image</string>
+    <string name="login_attempt_ask">Please trigger the Login request from Client app</string>
+    <string name="login_attempt_processing">Attempting to login with Credentials…</string>
+    <string name="server_disconnected">Login Service has disconnected</string>
+    <string name="login_success">Login request has completed. Please check the client app to see your profile</string>
 </resources>
