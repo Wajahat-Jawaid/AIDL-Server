@@ -22,13 +22,6 @@ abstract class BaseFragment<out VDB> : Fragment() {
     lateinit var viewModelFactory: ViewModelProvider.Factory
     lateinit var navController: NavController
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        // Handle fragment arguments
-        if (arguments != null)
-            handleArguments(requireArguments())
-    }
-
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -50,22 +43,12 @@ abstract class BaseFragment<out VDB> : Fragment() {
         activity?.windowManager?.defaultDisplay?.getMetrics(displayMetrics)
     }
 
-    open fun handleArguments(arguments: Bundle) {}
-
     fun showToast(@StringRes text: Int) {
         showToast(getString(text))
     }
 
     fun showToast(text: String) {
         Toast.makeText(context, text, Toast.LENGTH_SHORT).show()
-    }
-
-    fun showSnack(msg: String) {
-        Snackbar.make(view!!, msg, Snackbar.LENGTH_SHORT).show()
-    }
-
-    fun showSnack(@StringRes msg: Int) {
-        showSnack(getString(msg))
     }
 
     /** Abstract methods */
