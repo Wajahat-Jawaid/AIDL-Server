@@ -1,2 +1,2 @@
-rootProject.name = "SocialMobileTest-Server"
+rootProject.name = "AIDL-Server"
 include ':app'
