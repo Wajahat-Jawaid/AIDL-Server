@@ -14,7 +14,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.wajahat.socialmobiletestserver"
+        applicationId "com.wajahat.aidlserver"
         minSdkVersion rootProject.minSdkVersion
         targetSdkVersion rootProject.targetSdkVersion
         versionCode 1

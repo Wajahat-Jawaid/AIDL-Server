@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SocialMobileTest - Server</string>
+    <string name="app_name">AIDL - Server</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
 

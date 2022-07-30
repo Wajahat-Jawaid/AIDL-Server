@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.wajahat.socialmobiletestserver">
+    package="com.wajahat.aidlserver">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
-        android:name=".core.App"
-        android:usesCleartextTraffic="true"
+        android:name="com.wajahat.aidlserver.core.App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.SocialMobileAndroidTest">
-        <activity android:name=".ui.MainActivity">
+        android:theme="@style/App.Theme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.wajahat.aidlserver.ui.MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,7 +24,8 @@
             </intent-filter>
         </activity>
         <service
-            android:name=".service.IPCServerService">
+            android:name="com.wajahat.aidlserver.service.IPCServerService"
+            android:exported="true">
             <intent-filter>
                 <action android:name="loginCredentials" />
             </intent-filter>
